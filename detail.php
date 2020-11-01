@@ -11,20 +11,23 @@ MercadoPago\SDK::setAccessToken('APP_USR-8058997674329963-062418-89271e2424bb195
 MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
-  $item->name = "Lalo Landa";
-  $item->surname = "Luevano";
-  $item->email = "test_user_58295862@testuser.com";
-  $item->phone = array(
+$payer = new MercadoPago\Payer();
+  $payer->name = "Lalo Landa";
+  $payer->surname = "Luevano";
+  $payer->email = "test_user_58295862@testuser.com";
+  $payer->phone = array(
     "area_code" => "52",
     "number" => "5549737300"
   );
   
-  $item->address = array(
+  $payer->address = array(
     "street_name" => ":Insurgentes Sur",
     "street_number" => 1602,
     "zip_code" => "03940"
   );
+
  
+
 
 
 // Crea un ítem en la preferencia
@@ -35,7 +38,7 @@ $item->description = "Dispositivo móvil de Tienda e-commerce";
 $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $item->external_reference = "alonso.locseg@gmail.com";
-
+$preference->$payer = $payer;
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
       array("id" => "amex")
@@ -666,7 +669,7 @@ $preference->save();
     <div id="ac-gn-viewport-emitter"> </div>
 </body>
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
-<script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
+<script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 
 
 </html>
