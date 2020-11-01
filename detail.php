@@ -454,7 +454,24 @@
 </head>
 
 
+<?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
 
+// Agrega credenciales
+MercadoPago\SDK::setAccessToken('TEST-1307145573427205-093006-0603fe3260c0bd02317c44947032109c-94240782');
+
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+
+// Crea un ítem en la preferencia
+$item = new MercadoPago\Item();
+$item->title = 'Mi producto';
+$item->quantity = 1;
+$item->unit_price = 75.56;
+$preference->items = array($item);
+$preference->save();
+?>
 <body class="as-theme-light-heroimage">
 
     <div class="stack">
@@ -554,73 +571,10 @@
                                         </h3>
                                     </div>
 
-                                    <form action="process_payment.php" method="post" id="paymentForm">
-                                        <h3>Detalles del comprador</h3>
-                                        <div>
-                                            <div>
-                                                <label for="email">E-mail</label>
-                                                <input id="email" name="email" type="text"
-                                                    value="test@test.com"></select>
-                                            </div>
-                                            
-                                          
-                                        </div>
-                                        <h3>Detalles de la tarjeta</h3>
-                                        <div>
-                                            <div>
-                                                <label for="cardholderName">Titular de la tarjeta</label>
-                                                <input id="cardholderName" data-checkout="cardholderName" type="text">
-                                            </div>
-                                            <div>
-                                                <label for="">Fecha de vencimiento</label>
-                                                <div>
-                                                    <input type="text" placeholder="MM" id="cardExpirationMonth"
-                                                        data-checkout="cardExpirationMonth" onselectstart="return false"
-                                                        onpaste="return false" oncopy="return false"
-                                                        oncut="return false" ondrag="return false" ondrop="return false"
-                                                        autocomplete=off>
-                                                    <span class="date-separator">/</span>
-                                                    <input type="text" placeholder="YY" id="cardExpirationYear"
-                                                        data-checkout="cardExpirationYear" onselectstart="return false"
-                                                        onpaste="return false" oncopy="return false"
-                                                        oncut="return false" ondrag="return false" ondrop="return false"
-                                                        autocomplete=off>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="cardNumber">Número de la tarjeta</label>
-                                                <input type="text" id="cardNumber" data-checkout="cardNumber"
-                                                    onselectstart="return false" onpaste="return false"
-                                                    oncopy="return false" oncut="return false" ondrag="return false"
-                                                    ondrop="return false" autocomplete=off>
-                                            </div>
-                                            <div>
-                                                <label for="securityCode">Código de seguridad</label>
-                                                <input id="securityCode" data-checkout="securityCode" type="text"
-                                                    onselectstart="return false" onpaste="return false"
-                                                    oncopy="return false" oncut="return false" ondrag="return false"
-                                                    ondrop="return false" autocomplete=off>
-                                            </div>
-                                            <div id="issuerInput">
-                                                <label for="issuer">Banco emisor</label>
-                                                <select id="issuer" name="issuer" data-checkout="issuer"></select>
-                                            </div>
-                                            <div>
-                                                <label for="installments">Cuotas</label>
-                                                <select type="text" id="installments" name="installments"></select>
-                                            </div>
-                                            <div>
-                                                <input type="hidden" name="transactionAmount" id="transactionAmount"
-                                                    value="<?php echo $_POST['price'] ?>" />
-                                                <input type="hidden" name="paymentMethodId" id="paymentMethodId" />
-                                                <input type="hidden" name="description" id="description" value="<?php echo $_POST['title'] ?>"/>
-                                                <br>
-
-                                                <button type="submit" class="mercadopago-button">Pagar</button>
-                                                <br>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <script
+  src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
 
 
                                 </div>
