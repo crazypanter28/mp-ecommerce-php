@@ -659,6 +659,6 @@ $preference->auto_return = "approved";
 </body>
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
-<script src="/mercadop.js"></script>
+
 
 </html>
