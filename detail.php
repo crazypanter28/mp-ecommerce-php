@@ -464,8 +464,8 @@ require __DIR__ .  '/vendor/autoload.php';
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('TEST-1307145573427205-093006-0603fe3260c0bd02317c44947032109c-94240782');
 
-$preference = new MercadoPago\Payer();
-  $payer->name = ":Lalo Landa";
+$payer = new MercadoPago\Payer();
+  $payer->name = "Lalo Landa";
   $payer->surname = "Luevano";
   $payer->email = "test_user_58295862@testuser.com";
   $payer->phone = array(
@@ -478,8 +478,8 @@ $preference = new MercadoPago\Payer();
     "street_number" => 1602,
     "zip_code" => "03940"
   );
-  $preference->payer = array($payer);
-  $preference->save();
+  $payer->payer = array($payer);
+  $payer->save();
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
