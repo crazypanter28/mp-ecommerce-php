@@ -490,18 +490,18 @@ $item->description = "Dispositivo móvil de Tienda e-commerce";
 $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $item->external_reference = "alonso.locseg@gmail.com";
-$preference->items = array($item);
-$preference->save();
 
-$preference = new MercadoPago\Preference();
-//...
+
+
+
 $preference->back_urls = array(
     "success" => "https://www.tu-sitio/success",
     "failure" => "http://www.tu-sitio/failure",
     "pending" => "http://www.tu-sitio/pending"
 );
 $preference->auto_return = "approved";
-
+$preference->items = array($item);
+$preference->save();
 ?>
 <body class="as-theme-light-heroimage">
 
