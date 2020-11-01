@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
     require_once 'vendor/autoload.php';
 
-    MercadoPago\SDK::setAccessToken("TEST-1307145573427205-093006-0603fe3260c0bd02317c44947032109c-94240782");
+    MercadoPago\SDK::setAccessToken("APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948");
     
     $payment = new MercadoPago\Payment();
     $payment->transaction_amount = (float)$_POST['transactionAmount'];
