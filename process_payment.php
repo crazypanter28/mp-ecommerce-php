@@ -25,6 +25,8 @@ error_reporting(E_ALL);
     $payment->payer = $payer;
 
     $payment->save();
+    var_dump($payment);
+    die();
 
     
 
