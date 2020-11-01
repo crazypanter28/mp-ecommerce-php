@@ -3,7 +3,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 // SDK
-require DIR .  '/vendor/autoload.php';
+require __DIR__ .  '/vendor/autoload.php';
+
 $baseUrl = $_SERVER['SERVER_NAME'];
 //credentiales
 MercadoPago\SDK::setAccessToken('APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d-617633181');
