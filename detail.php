@@ -478,8 +478,9 @@ $payer = new MercadoPago\Payer();
     "street_number" => 1602,
     "zip_code" => "03940"
   );
-  $payer->payer = array($payer);
-  $payer->save();
+  $payment->payer = $payer;
+
+  $payment->save();
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
