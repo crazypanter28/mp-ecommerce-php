@@ -36,6 +36,16 @@ $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $item->external_reference = "alonso.locseg@gmail.com";
 
+$preference->payment_methods = array(
+    "excluded_payment_methods" => array(
+      array("id" => "amex")
+    ),
+    "excluded_payment_types" => array(
+      array("id" => "ticket")
+    ),
+    "installments" => 6
+  );
+
 $preference->back_urls = array(
     "success" => "https://crazypanter28-mp-commerce-php.herokuapp.com/success",
     "failure" => "https://crazypanter28-mp-commerce-php.herokuapp.com/failure",
@@ -603,7 +613,7 @@ $preference->save();
                                         </h3>
                                     </div>
 
-                                    <a href="<?php echo $preference->init_point;?>">Pagar</a>
+                                    <a href="<?php echo $preference->init_point;?>">“Pagar la compra</a>
 
 
                                 </div>
