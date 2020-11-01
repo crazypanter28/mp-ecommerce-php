@@ -30,7 +30,7 @@ $payer->phone  = array(
             "number" => "5549737300"
           );
 $payer->address  = array(
-            "zip_code" => "0394​ 0",
+            "zip_code" => "0394​0",
             "street_name" => "Insurgentes Sur",
             "street_number" => "1602"
           );
