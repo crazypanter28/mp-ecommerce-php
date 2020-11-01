@@ -41,7 +41,7 @@ $preference->payment_methods = array(
       array("id" => "amex")
     ),
     "excluded_payment_types" => array(
-      array("id" => "ticket")
+      array("id" => "atm")
     ),
     "installments" => 6
   );
