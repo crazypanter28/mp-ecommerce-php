@@ -461,16 +461,45 @@ require __DIR__ .  '/vendor/autoload.php';
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('TEST-1307145573427205-093006-0603fe3260c0bd02317c44947032109c-94240782');
 
+$preference = new MercadoPago\Payer();
+  $payer->name = ":Lalo Landa";
+  $payer->surname = "Luevano";
+  $payer->email = "test_user_58295862@testuser.com";
+  $payer->phone = array(
+    "area_code" => "52",
+    "number" => "5549737300"
+  );
+  
+  $payer->address = array(
+    "street_name" => ":Insurgentes Sur",
+    "street_number" => 1602,
+    "zip_code" => "03940"
+  );
+  $preference->payer = array($payer);
+  $preference->save();
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
+$item->id = "1234";
 $item->title = $_POST['title'] ;
+$item->description = "Dispositivo móvil de Tienda e-commerce";
 $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
+$item->external_reference = "alonso.locseg@gmail.com";
 $preference->items = array($item);
 $preference->save();
+
+$preference = new MercadoPago\Preference();
+//...
+$preference->back_urls = array(
+    "success" => "https://www.tu-sitio/success",
+    "failure" => "http://www.tu-sitio/failure",
+    "pending" => "http://www.tu-sitio/pending"
+);
+$preference->auto_return = "approved";
+
 ?>
 <body class="as-theme-light-heroimage">
 
