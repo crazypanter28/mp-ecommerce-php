@@ -44,7 +44,7 @@ $preference->payment_methods = array(
     "excluded_payment_types" => array(
       array("id" => "atm")
     ),
-    "installments" >= 2
+    "installments" <= 2
   );
 
 $preference->back_urls = array(
