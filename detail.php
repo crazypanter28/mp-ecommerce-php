@@ -463,7 +463,7 @@ require __DIR__ .  '/vendor/autoload.php';
 
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('TEST-1307145573427205-093006-0603fe3260c0bd02317c44947032109c-94240782');
-
+MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 $payer = new MercadoPago\Payer();
   $payer->name = "Lalo Landa";
   $payer->surname = "Luevano";
