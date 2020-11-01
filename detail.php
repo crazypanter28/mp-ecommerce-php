@@ -492,9 +492,9 @@ $item->unit_price = $_POST['price'];
 $item->external_reference = "alonso.locseg@gmail.com";
 
 $preference->back_urls = array(
-    "success" => "https://www.tu-sitio/success",
-    "failure" => "http://www.tu-sitio/failure",
-    "pending" => "http://www.tu-sitio/pending"
+    "success" => "https://https://crazypanter28-mp-commerce-php.herokuapp.com//success",
+    "failure" => "http://https://crazypanter28-mp-commerce-php.herokuapp.com//failure",
+    "pending" => "http://https://crazypanter28-mp-commerce-php.herokuapp.com//pending"
 );
 $preference->auto_return = "approved";
 $preference->items = array($item);
