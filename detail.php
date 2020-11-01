@@ -613,7 +613,7 @@ $preference->save();
                                         </h3>
                                     </div>
 
-                                    <a href="<?php echo $preference->init_point;?>">“Pagar la compra</a>
+                                    <a href="<?php echo $preference->sandbox_init_point”;?>">“Pagar la compra</a>
 
 
                                 </div>
