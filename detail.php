@@ -52,7 +52,7 @@ $preference->back_urls = array(
     "failure" => $url."/failure.php?",
     "pending" => $url."/pending.php?"
 );
-$preference->notification_url =  $url. "/notificacion";
+$preference->notifications_url =  $url. "/notificacion";
 $preference->auto_return = "approved";
 $preference->items = array($item);
 $preference->save();
