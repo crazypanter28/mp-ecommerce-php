@@ -71,6 +71,7 @@ function getIssuers(paymentMethodId) {
  }
  
  function setInstallments(status, response){
+     console.log(response);
     if (status == 200) {
         document.getElementById('installments').options.length = 0;
         response[0].payer_costs.forEach( payerCost => {
