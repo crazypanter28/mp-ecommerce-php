@@ -619,9 +619,9 @@
                                             </div>
                                             <div>
                                                 <input type="hidden" name="transactionAmount" id="transactionAmount"
-                                                    value="100" />
+                                                    value="<?php echo $_POST['price'] ?>" />
                                                 <input type="hidden" name="paymentMethodId" id="paymentMethodId" />
-                                                <input type="hidden" name="description" id="description" />
+                                                <input type="hidden" name="description" id="description" value="<?php echo $_POST['title'] ?>"/>
                                                 <br>
 
                                                 <button type="submit" class="mercadopago-button">Pagar</button>
