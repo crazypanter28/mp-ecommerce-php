@@ -562,16 +562,8 @@
                                                 <input id="email" name="email" type="text"
                                                     value="test@test.com"></select>
                                             </div>
-                                            <div>
-                                                <label for="docType">Tipo de documento</label>
-                                                <select id="docType" name="docType" data-checkout="docType"
-                                                    type="text"></select>
-                                            </div>
-                                            <div>
-                                                <label for="docNumber">Número de documento</label>
-                                                <input id="docNumber" name="docNumber" data-checkout="docNumber"
-                                                    type="text" />
-                                            </div>
+                                            
+                                          
                                         </div>
                                         <h3>Detalles de la tarjeta</h3>
                                         <div>
