@@ -47,7 +47,7 @@ $preference->back_urls = array(
             'pending' => $baseUrl."/pending.php",
             'failure' => $baseUrl."/failure.php"
           );
-$preference->notification_url = $baseUrl."/notification.php?source_news=webhooks";
+$preference->notification_url = "https://trad-sparks.000webhostapp.com/mp-ecommerce-php/";
 $preference->auto_return = 'approved';
 $preference->save();
 
