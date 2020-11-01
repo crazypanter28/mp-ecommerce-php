@@ -463,7 +463,7 @@ require __DIR__ .  '/vendor/autoload.php';
 
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('TEST-1307145573427205-093006-0603fe3260c0bd02317c44947032109c-94240782');
-
+MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 $payer = new MercadoPago\Payer();
   $payer->name = "Lalo Landa";
   $payer->surname = "Luevano";
@@ -491,9 +491,6 @@ $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $item->external_reference = "alonso.locseg@gmail.com";
 
-
-
-
 $preference->back_urls = array(
     "success" => "https://www.tu-sitio/success",
     "failure" => "http://www.tu-sitio/failure",
@@ -502,6 +499,8 @@ $preference->back_urls = array(
 $preference->auto_return = "approved";
 $preference->items = array($item);
 $preference->save();
+
+
 ?>
 <body class="as-theme-light-heroimage">
 
