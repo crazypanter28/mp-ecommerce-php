@@ -14,8 +14,7 @@ error_reporting(E_ALL);
     $payment->payment_method_id = $_POST['paymentMethodId'];
     $payment->issuer_id = (int)$_POST['issuer'];
 
-    var_dump($payment);
-    die();
+ 
 
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
