@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 require __DIR__ .  '/vendor/autoload.php';
 $url = $_SERVER['SERVER_NAME'];
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948');
+MercadoPago\SDK::setAccessToken('APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d-617633181');
 MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 $payer = new MercadoPago\Payer();
   $payer->name = "Lalo Landa";
@@ -44,7 +44,7 @@ $preference->payment_methods = array(
     "excluded_payment_types" => array(
       array("id" => "atm")
     ),
-    "installments"  == 1
+    "installments"  >=6
   );
 
 $preference->back_urls = array(
