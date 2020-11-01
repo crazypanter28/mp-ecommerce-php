@@ -47,9 +47,9 @@ $preference->payment_methods = array(
   );
 
 $preference->back_urls = array(
-    "success" => "https://crazypanter28-mp-commerce-php.herokuapp.com/success",
-    "failure" => "https://crazypanter28-mp-commerce-php.herokuapp.com/failure",
-    "pending" => "https://crazypanter28-mp-commerce-php.herokuapp.com/pending"
+    "success" => "https://crazypanter28-mp-commerce-php.herokuapp.com/success.php?",
+    "failure" => "https://crazypanter28-mp-commerce-php.herokuapp.com/failure.php?",
+    "pending" => "https://crazypanter28-mp-commerce-php.herokuapp.com/pending.php?"
 );
 $preference->auto_return = "approved";
 $preference->items = array($item);
@@ -613,7 +613,7 @@ $preference->save();
                                         </h3>
                                     </div>
 
-                                    <a  class="mercadopago-button" href="<?php echo $preference->sandbox_init_point;?>">“Pagar la compra</a>
+                                    <a  class="mercadopago-button" href="<?php echo $preference->init_point;?>">Pagar la compra</a>
 
 
                                 </div>
