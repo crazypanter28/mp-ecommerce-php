@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 // SDK
 require __DIR__ .  '/vendor/autoload.php';
 
-$baseUrl = $_SERVER['SERVER_NAME'];
+$url = $_SERVER['SERVER_NAME'];
 //credentiales
 MercadoPago\SDK::setAccessToken('APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d-617633181');
 MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
@@ -43,11 +43,11 @@ $preference->payment_methods = array(
               );
 $preference->external_reference = 'alonso.locseg@gmail.com';
 $preference->back_urls = array(
-            'success' => $baseUrl."/success.php", 
-            'pending' => $baseUrl."/pending.php",
-            'failure' => $baseUrl."/failure.php"
+            'success' => $url."/success.php", 
+            'pending' => $url."/pending.php",
+            'failure' => $url."/failure.php"
           );
-$preference->notification_url = "https://trad-sparks.000webhostapp.com/mp-ecommerce-php/";
+$preference->notification_url = "https://trad-sparks.000webhostapp.com/mp-ecommerce-php/notificacion.php";
 $preference->auto_return = 'approved';
 $preference->save();
 
