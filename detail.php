@@ -36,7 +36,7 @@ $item->description = "Dispositivo móvil de Tienda e-commerce";
 $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $item->external_reference = "alonso.locseg@gmail.com";
-$preference->$payer = $payer;
+
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
       array("id" => "amex")
