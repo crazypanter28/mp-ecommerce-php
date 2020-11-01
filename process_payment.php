@@ -18,10 +18,10 @@ error_reporting(E_ALL);
 
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
-    $payer->identification = array( 
+    /*$payer->identification = array( 
         "type" => $_POST['docType'],
         "number" => $_POST['docNumber']
-    );
+    );*/
     $payment->payer = $payer;
 
     $payment->save();
