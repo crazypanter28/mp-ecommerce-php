@@ -36,7 +36,7 @@ $payer = new MercadoPago\Payer();
     "zip_code" => "03940"
   );
   $preference = new MercadoPago\Preference();
-$preference->$payer = $payer;
+$preference->$payer = array($payer);;
 
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
