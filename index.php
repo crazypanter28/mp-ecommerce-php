@@ -1104,5 +1104,6 @@
     <div id="ac-gn-viewport-emitter"> </div>
 </body>
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+<script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 
 </html>
