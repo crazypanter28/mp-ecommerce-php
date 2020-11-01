@@ -26,8 +26,7 @@ error_reporting(E_ALL);
 
     $payment->save();
 
-    var_dump($payment);
-    die();
+    
 
     $response = array(
         'status' => $payment->status,
