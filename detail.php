@@ -9,23 +9,23 @@ require __DIR__ .  '/vendor/autoload.php';
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948');
 MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
-$payer = new MercadoPago\Payer();
-  $payer->name = "Lalo Landa";
-  $payer->surname = "Luevano";
-  $payer->email = "test_user_58295862@testuser.com";
-  $payer->phone = array(
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+  $item->name = "Lalo Landa";
+  $item->surname = "Luevano";
+  $item->email = "test_user_58295862@testuser.com";
+  $item->phone = array(
     "area_code" => "52",
     "number" => "5549737300"
   );
   
-  $payer->address = array(
+  $item->address = array(
     "street_name" => ":Insurgentes Sur",
     "street_number" => 1602,
     "zip_code" => "03940"
   );
  
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
+
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
