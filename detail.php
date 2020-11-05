@@ -16,7 +16,7 @@ $item = new MercadoPago\Item();
 $item->id = 1234;
 $item->title = $_POST['price'];
 $item->description = "​Dispositivo móvil de Tienda e-commerce";
-$item->picture_url = $_POST['img'];
+$item->picture_url = "https://trad-sparks.000webhostapp.com/mp-ecommerce-php/".$_POST['img'];;
 $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $preference->items = array($item);
@@ -24,7 +24,7 @@ $preference->items = array($item);
 $payer = new MercadoPago\Payer();
 $payer->name = 'Lalo';
 $payer->surname = 'Landa';
-$payer->email = 'test_user_58295862@testuser.com';
+$payer->email = 'test_user_81131286@testuser.com';
 $payer->phone  = array(
             "area_code" => "52",
             "number" => "5549737300"
@@ -568,8 +568,6 @@ $preference->save();
                                             style="max-width: 70%;max-height: 70%;" alt="" width="445" height="445">
                                     </div>
                                     <div class="images mini-gallery gal5 ">
-
-                                    <?php echo "https://trad-sparks.000webhostapp.com/mp-ecommerce-php/".$_POST['img']; ?>
                                         <div class="as-isdesktop with-paddlenav with-paddlenav-onhover">
                                             <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink"
                                                 data-relatedlink="6|Powerbeats3 Wireless Earphones - Neighborhood Collection - Brick Red|MPXP2">
