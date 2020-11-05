@@ -549,6 +549,7 @@ $preference->save();
                                         aria-controls="as-search-filters" type="button">
                                         <h2 class=" as-filter-button-text">
                                             Smartphones
+                                            <?php echo $_POST['img']; ?>
                                         </h2>
                                     </button>
 
