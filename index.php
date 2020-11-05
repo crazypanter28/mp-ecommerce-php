@@ -691,7 +691,7 @@
                                                     data-relatedlink="2|Beats Studio3 Wireless Over‑Ear Headphones - Shadow Gray|MQUF2">
                                                     <div class="as-tilegallery-element as-image-selected">
                                                         <div class=""></div>
-                                                        <img src="assets/samsung-galaxy-s9-xxl.jpg"
+                                                        <img src="./assets/samsung-galaxy-s9-xxl.jpg"
                                                             class="ir ir item-image as-producttile-image" alt=""
                                                             data-desc="Samsung galaxy"
                                                             style="content:-webkit-image-set(url(https://md6.pricebaba.com/images/product/mobile/46638/samsung-galaxy-s9-xxl.jpg">
@@ -717,7 +717,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/samsung-galaxy-s9-xxl.jpg">
+                                            <input type="hidden" name="img" value="assets/samsung-galaxy-s9-xxl.jpg">
                                             <input type="hidden" name="title" value="Samsung Galaxy S9">
                                             <input type="hidden" name="price" value="15000">
                                             <input type="hidden" name="unit" value="1">
@@ -781,7 +781,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/l6g6.jpg">
+                                            <input type="hidden" name="img" value="assets/l6g6.jpg">
                                             <input type="hidden" name="title" value="LG G6">
                                             <input type="hidden" name="price" value="10000">
                                             <input type="hidden" name="unit" value="1">
@@ -852,7 +852,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/u_10168742.jpg">
+                                            <input type="hidden" name="img" value="assets/u_10168742.jpg">
                                             <input type="hidden" name="title" value="iPhone 8">
                                             <input type="hidden" name="price" value="16000">
                                             <input type="hidden" name="unit" value="1">
@@ -922,7 +922,7 @@
                                         </div>
                                         <form action="/detail.php" method="get">
                                             <input type="hidden" name="img"
-                                                value="./assets/motorola-moto-g5-plus-1.jpg">
+                                                value="assets/motorola-moto-g5-plus-1.jpg">
                                             <input type="hidden" name="title" value="Motorola G5">
                                             <input type="hidden" name="price" value="9000">
                                             <input type="hidden" name="unit" value="1">
@@ -981,7 +981,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/motorola-moto-g4-3.jpg">
+                                            <input type="hidden" name="img" value="assets/motorola-moto-g4-3.jpg">
                                             <input type="hidden" name="title" value="Moto G4">
                                             <input type="hidden" name="price" value="8000">
                                             <input type="hidden" name="unit" value="1">
@@ -1039,7 +1039,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/003.jpg">
+                                            <input type="hidden" name="img" value="assets/003.jpg">
                                             <input type="hidden" name="title" value="Sony Xperia XZ2">
                                             <input type="hidden" name="price" value="10000">
                                             <input type="hidden" name="unit" value="1">
