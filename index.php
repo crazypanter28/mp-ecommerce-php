@@ -691,7 +691,7 @@
                                                     data-relatedlink="2|Beats Studio3 Wireless Over‑Ear Headphones - Shadow Gray|MQUF2">
                                                     <div class="as-tilegallery-element as-image-selected">
                                                         <div class=""></div>
-                                                        <img src="./assets/samsung-galaxy-s9-xxl.jpg"
+                                                        <img src="assets/samsung-galaxy-s9-xxl.jpg"
                                                             class="ir ir item-image as-producttile-image" alt=""
                                                             data-desc="Samsung galaxy"
                                                             style="content:-webkit-image-set(url(https://md6.pricebaba.com/images/product/mobile/46638/samsung-galaxy-s9-xxl.jpg">
