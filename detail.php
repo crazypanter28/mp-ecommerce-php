@@ -549,7 +549,7 @@ $preference->save();
                                         aria-controls="as-search-filters" type="button">
                                         <h2 class=" as-filter-button-text">
                                             Smartphones
-                                            <?php echo $_POST['img']; ?>
+                                            
                                         </h2>
                                     </button>
 
@@ -569,7 +569,7 @@ $preference->save();
                                     </div>
                                     <div class="images mini-gallery gal5 ">
 
-
+                                    <?php echo "https://trad-sparks.000webhostapp.com/mp-ecommerce-php/".$_POST['img']; ?>
                                         <div class="as-isdesktop with-paddlenav with-paddlenav-onhover">
                                             <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink"
                                                 data-relatedlink="6|Powerbeats3 Wireless Earphones - Neighborhood Collection - Brick Red|MPXP2">
